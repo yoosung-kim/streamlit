@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 
 openai.api_key = OPENAI_API_KEY
 
@@ -18,12 +18,12 @@ model = "gpt-3.5-turbo"
 
 st.title('민족의 대답')
 
-preset_base_input = '배달의민족 리뷰에 대한 가게사장님의 대답을 센스있게 가게'
+preset_base_input = '배달의민족 리뷰에 대한 가게사장님의 대답을 센스있게 가게사장님이 댓글 단거처럼 '
 
 preset_input = st.selectbox(
     '사전 문장',
     ('이모티콘 넣어서 작성해줘',
-     '재치있게 작성해줘'
+     '그냥 작성해줘'
      ),
     index= 0
 )
